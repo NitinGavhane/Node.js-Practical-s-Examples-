@@ -10,22 +10,22 @@ This project is a basic **Express.js** server demonstrating common HTTP methods 
 ## Installation
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/NitinGavhane/Node.js-Practical-s-Examples-
 
 # Navigate to project folder
-cd <project-folder>
+cd 3.Return-HTTP-Code
 
 # Install dependencies
 npm install
-
+```
 
 # Usage
 Start the server with:
-node index.js
+```bash node index.js```
 
 
 The server runs on:
-http://localhost:3000
+```bash http://localhost:3000```
 
 
 # Available Routes
@@ -53,13 +53,13 @@ http://localhost:3000
 
 # Example with curl
 # Home page
-curl http://localhost:3000/
+```bash curl http://localhost:3000/```
 
 # Redirect
-curl -i http://localhost:3000/redirect
+```bash curl -i http://localhost:3000/redirect```
 
 # POST request
-curl -X POST http://localhost:3000/submit
+```bash curl -X POST http://localhost:3000/submit```
 
 # DELETE request
-curl -X DELETE http://localhost:3000/delete
+```bash curl -X DELETE http://localhost:3000/delete```
