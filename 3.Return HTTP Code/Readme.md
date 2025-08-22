@@ -53,13 +53,13 @@ The server runs on:
 
 # Example with curl
 # Home page
-```bash curl http://localhost:3000/```
+```curl http://localhost:3000/```
 
 # Redirect
-```bash curl -i http://localhost:3000/redirect```
+```curl -i http://localhost:3000/redirect```
 
 # POST request
-```bash curl -X POST http://localhost:3000/submit```
+```curl -X POST http://localhost:3000/submit```
 
 # DELETE request
-```bash curl -X DELETE http://localhost:3000/delete```
+```curl -X DELETE http://localhost:3000/delete```
