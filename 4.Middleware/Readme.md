@@ -91,3 +91,42 @@ Example Console Output
 Listening on port 3000
 { name: 'Nitin Gavhane', email: 'gavhanenitin911@gmail.com' }
 ```
+
+## Steps to Use Middleware with Morgan
+1. Use npm to install the morgan package:
+```
+npm install morgan
+```
+2. Run index2.js with nodemon:
+```
+nodemon index2.js
+```
+3. Import the morgan module in your file.
+4. Mount the middleware using the Express .use() method.
+5. Test the logging on http://localhost:3000 and with Postman.
+
+
+## index2.js
+```
+import express from "express";
+import morgan from "morgan";
+
+const app = express();
+const port = 3000;
+
+// Morgan middleware for logging
+app.use(morgan('combined'));
+
+app.get("/", (req, res) => {
+  res.send("Morgan Logger works!");
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+
+```
+
+
+## Example Log Output in Terminal:
+::1 - - [24/Aug/2025:02:00:12 +0000] "GET / HTTP/1.1" 200 23 "-" "Mozilla/5.0"
