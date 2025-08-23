@@ -84,6 +84,8 @@ app.listen(port, () => {
 
 
 ## Output
+<img width="1918" height="971" alt="image" src="https://github.com/user-attachments/assets/9f045d70-e8f4-4980-a9e4-ad6576259dbd" />
+
 Example Console Output
 ```
 Listening on port 3000
