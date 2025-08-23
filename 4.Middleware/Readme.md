@@ -129,4 +129,6 @@ app.listen(port, () => {
 
 
 ## Example Log Output in Terminal:
+<img width="1897" height="990" alt="image" src="https://github.com/user-attachments/assets/2a142dcb-8fd8-42c5-80a9-4105dedcbc95" />
+
 ::1 - - [24/Aug/2025:02:00:12 +0000] "GET / HTTP/1.1" 200 23 "-" "Mozilla/5.0"
