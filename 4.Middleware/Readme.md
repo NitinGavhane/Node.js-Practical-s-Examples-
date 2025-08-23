@@ -182,6 +182,8 @@ app.listen(port, () => {
 ```
 
 ## Example Log Output in Terminal:
+<img width="1847" height="1065" alt="image" src="https://github.com/user-attachments/assets/2d1bc840-3272-4e11-8730-7d9023ea3766" />
+
 ```
 Request URL: /
 Request Method: GET
