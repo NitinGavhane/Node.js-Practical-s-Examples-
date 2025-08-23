@@ -1,6 +1,9 @@
-# Node.js Middleware Example with Body-Parser
+# Node.js Middleware Examples
 
-This project demonstrates how to use **Express.js** with **body-parser middleware** to handle form submissions in Node.js.
+This project demonstrates how to use **Express.js middleware** such as:
+- `body-parser` → to handle form submissions
+- `morgan` → to log HTTP requests
+- Custom Middleware → to log requests manually
 
 ---
 
@@ -8,7 +11,8 @@ This project demonstrates how to use **Express.js** with **body-parser middlewar
 - Serves a static HTML form (`index.html`).
 - Uses `body-parser.urlencoded()` to parse form data.
 - Logs submitted form data on the server.
-- Responds with received data.
+- Demonstrates request logging with `morgan`.
+- Implements a custom middleware logger.
 
 ---
 
