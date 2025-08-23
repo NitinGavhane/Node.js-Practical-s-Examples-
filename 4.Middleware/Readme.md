@@ -136,3 +136,55 @@ app.listen(port, () => {
 <img width="1897" height="990" alt="image" src="https://github.com/user-attachments/assets/2a142dcb-8fd8-42c5-80a9-4105dedcbc95" />
 
 ::1 - - [24/Aug/2025:02:00:12 +0000] "GET / HTTP/1.1" 200 23 "-" "Mozilla/5.0"
+
+
+
+## Steps to Create Custom Middleware
+1. Run index3.js with nodemon:
+```
+nodemon index3.js
+```
+2. Create your own function called logger(req,res,next).
+3. Inside the function use console.log() to log:
+- request method
+- request URL
+- request time
+4. Remember to call next() to pass control to the next handler.
+5. Mount your middleware function using the Express .use() method.
+6. Test the logging on http://localhost:3000 and with Postman.
+
+
+## index3.js
+```
+import express from "express";
+
+const app = express();
+const port = 3000;
+
+function logger(req, res, next) {
+  console.log('Request URL:', req.originalUrl);
+  console.log('Request Method:', req.method);
+  console.log('Request Time:', new Date().toISOString());
+  console.log('---');
+  next();
+}
+
+// Mount custom middleware
+app.use(logger);
+
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
+```
+
+## Example Log Output in Terminal:
+```
+Request URL: /
+Request Method: GET
+Request Time: 2025-08-24T02:15:30.123Z
+---
+```
